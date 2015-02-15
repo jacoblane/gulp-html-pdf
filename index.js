@@ -10,10 +10,10 @@ module.exports = function (options) {
 			return;
 		}
 
-		//if (file.isStream()) {
-		//	cb(new gutil.PluginError('gulp-markdown-pdf', 'Streaming not supported'));
-		//	return;
-		//}
+		if (file.isStream()) {
+			cb(new gutil.PluginError('gulp-html-pdf', 'Streaming not supported'));
+			return;
+		}
 
 		pdf.create(file.contents.toString(), options)
   		.toBuffer(function (err, buffer) {

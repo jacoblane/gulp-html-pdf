@@ -15,5 +15,9 @@
     "gulp-util": "^3.0.3",
     "html-pdf": "^1.0.0",
     "through2": "^0.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacoblane/gulp-html-pdf.git"
   }
 }
